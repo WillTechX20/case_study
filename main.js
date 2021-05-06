@@ -4,9 +4,9 @@ var microsoftAzureResultItemNameStrs=['Person', 'Wall', 'Person', 'Indoor', 'Ind
 var i=0;
 var microsoftAzureResultItemNameP=document.querySelector('.microsoft_azure_result_item_name');
 var mobilenetResultItemNameP=document.querySelector('.mobilenet_result_item_name');
+var mobileNetResultItemNameStrs=['Shower Curtain', 'Medicine Chest or Medicine Cabinet', 'Pill Bottle', 'Pencil Box or Pencil Case', 'Medicine Chest or Medicine Cabinet', 'Envelope', 'Medicine Chest or Medicine Cabinet', 'Medicine Chest or Medicine Cabinet', 'Medicine Chest or Medicine Cabinet'];
 var testImgNameP=document.querySelector('.test_img_name');
 var testImg=document.querySelector('img');
-var moreAccurateItemIdentificationSystemP=document.querySelector('.more_accurate_item_identification_system');
 
 function prevTestImg(){
     i=i-1;
@@ -19,6 +19,7 @@ function prevTestImg(){
     testImg.alt=testImgAltStrs[i];
     testImgNameP.innerText=testImgAltStrs[i];
     microsoftAzureResultItemNameP.innerText=microsoftAzureResultItemNameStrs[i];
+    mobileNetResultItemNameP.innerText=mobileNetResultItemNameStrs[i];
 }
 
 function nextTestImg(){
@@ -32,4 +33,5 @@ function nextTestImg(){
     testImg.alt=testImgAltStrs[i];
     testImgNameP.innerText=testImgAltStrs[i];
     microsoftAzureResultItemNameP.innerText=microsoftAzureResultItemNameStrs[i];
+    mobileNetResultItemNameP.innerText=mobileNetResultItemNameStrs[i];
 }
